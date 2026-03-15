@@ -1,0 +1,28 @@
+# Data files
+cftc_downloads/*.csv
+
+# CFTC API credentials
+cftc_api_info
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
