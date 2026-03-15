@@ -11,7 +11,7 @@ def load_cftc_credentials(filepath: Path) -> dict:
                 continue
             key, value = line.split('=', 1)
             key = key.strip()
-            value = value.strip()
+            value = value.strip().strip("'\"")
             if key == 'CFTC_API_KEY_ID':
                 credentials['key_id'] = value
             elif key == 'CFTC_API_KEY_SECRET':
