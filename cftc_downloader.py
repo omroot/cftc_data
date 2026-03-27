@@ -15,8 +15,10 @@ ROOT_DIR = Path(__file__).resolve().parent
 DATASETS = {
     "disaggregated": {"id": "72hh-3qpy", "filename": "disaggregated_futures_only.csv"},
     "disaggregated_combined": {"id": "kh3c-gbw2", "filename": "disaggregated_combined.csv"},
-    "legacy": {"id": "jun7-fc8e", "filename": "legacy_combined.csv"},
+    "legacy": {"id": "6dca-aqww", "filename": "legacy_futures_only.csv"},
+    "legacy_combined": {"id": "jun7-fc8e", "filename": "legacy_combined.csv"},
     "tff": {"id": "gpe5-46if", "filename": "tff_futures_only.csv"},
+    "tff_combined": {"id": "yw9f-hn96", "filename": "tff_combined.csv"},
 }
 
 
