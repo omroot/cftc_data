@@ -6,12 +6,14 @@ from dash.dependencies import Input, Output, State
 
 from dashboard.dashboard.layout.page_home import page_home
 from dashboard.dashboard.layout.page_cftc_positioning import page_cftc_positioning
+from dashboard.dashboard.layout.page_tff import page_tff
 from dashboard.dashboard.layout.page_data_guide import page_data_guide
 
 from dashboard.dashboard.index import app
 
 # register callbacks (import triggers decoration)
 import dashboard.dashboard.layout.callbacks.callbacks_cftc  # noqa: F401
+import dashboard.dashboard.layout.callbacks.callbacks_tff   # noqa: F401
 import dashboard.dashboard.layout.callbacks.callbacks_home  # noqa: F401
 
 import dashboard.dashboard.config as cfg
@@ -42,6 +44,7 @@ def server_layout():
                 [
                     dbc.NavLink("Home", href="/home", id="link_home"),
                     dbc.NavLink("CFTC Positioning", href="/cftc_positioning", id="link_cftc_positioning"),
+                    dbc.NavLink("TFF Positioning", href="/tff", id="link_tff"),
                     dbc.NavLink("Data Guide", href="/data_guide", id="link_data_guide"),
                 ],
                 vertical=True,
@@ -123,6 +126,8 @@ def render_page_content(pathname):
         return page_home
     if pathname == "/cftc_positioning":
         return page_cftc_positioning
+    if pathname == "/tff":
+        return page_tff
     if pathname == "/data_guide":
         return page_data_guide
     return html.Div([

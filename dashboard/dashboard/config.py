@@ -9,7 +9,7 @@ EXTERNAL_STYLESHEETS = [
     'https://codepen.io/chriddyp/pen/bWLwgP.css'
 ]
 
-pages = ["home", "cftc_positioning", "data_guide"]
+pages = ["home", "cftc_positioning", "tff", "data_guide"]
 page_default = "home"
 
 page_active = [True if p == page_default else False for p in pages]
