@@ -119,8 +119,8 @@ def refresh_cftc_data(n_clicks):
     try:
         # Import the downloader
         sys.path.insert(0, str(_REPO_ROOT))
-        from cftc_config import load_cftc_credentials
-        from cftc_downloader import update_all_datasets
+        from src.cftc_config import load_cftc_credentials
+        from src.cftc_downloader import update_all_datasets
 
         creds_path = _REPO_ROOT / "cftc_api_info"
         credentials = load_cftc_credentials(creds_path)
