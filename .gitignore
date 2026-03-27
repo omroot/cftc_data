@@ -1,8 +1,11 @@
 # Data files
-cftc_downloads/*.csv
+*.csv
+cot_data/
+cache/
 
 # CFTC API credentials
 cftc_api_info
+.env
 
 # Python
 __pycache__/
